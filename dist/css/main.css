@@ -16,14 +16,15 @@ body {
   font-weight: 500; }
 
 .header .hero-content-container .hero-content .btn-container .btn {
+  font-family: inherit;
   padding: 1.6rem 4rem;
   border: none;
   outline: none;
-  font-weight: 700;
+  font-weight: 400;
   cursor: pointer;
   border-radius: 5rem;
   color: #fafafa;
-  font-weight: 500;
+  font-weight: 700;
   transition: background-color 300ms; }
 
 .header {
@@ -34,7 +35,8 @@ body {
   .header .image-hero-left, .header .image-hero-right {
     display: none; }
   .header .hero-content-container {
-    width: 100%; }
+    max-width: 82rem;
+    margin: 0 auto; }
     .header .hero-content-container img {
       transform: scale(1.1);
       width: 100%;
@@ -45,27 +47,81 @@ body {
       align-items: center;
       max-width: 32.7rem;
       margin: 0 auto; }
-    .header .hero-content-container .hero-content h1 {
-      width: 25rem;
-      font-size: 4rem;
-      color: #28283e;
-      margin-bottom: 2.4rem; }
-    .header .hero-content-container .hero-content p {
-      margin-bottom: 3.2rem; }
-    .header .hero-content-container .hero-content .btn-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 1.6rem; }
-      .header .hero-content-container .hero-content .btn-container .btn-primary {
-        background-color: #4d96a8; }
-        .header .hero-content-container .hero-content .btn-container .btn-primary span {
-          display: inline-block;
-          margin-left: 0.4rem;
-          color: #90e4f9; }
-        .header .hero-content-container .hero-content .btn-container .btn-primary:hover {
-          background-color: #72c1d5; }
-      .header .hero-content-container .hero-content .btn-container .btn-secondary {
-        background-color: #845eb0; }
-        .header .hero-content-container .hero-content .btn-container .btn-secondary:hover {
-          background-color: #b18ddd; }
+      .header .hero-content-container .hero-content h1 {
+        width: 25rem;
+        font-size: 4rem;
+        color: #28283e;
+        margin-bottom: 2.4rem; }
+      .header .hero-content-container .hero-content p {
+        margin-bottom: 3.2rem; }
+      .header .hero-content-container .hero-content .btn-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.6rem; }
+        .header .hero-content-container .hero-content .btn-container .btn-primary {
+          background-color: #4d96a8; }
+          .header .hero-content-container .hero-content .btn-container .btn-primary span {
+            display: inline-block;
+            margin-left: 0.4rem;
+            color: #90e4f9; }
+          .header .hero-content-container .hero-content .btn-container .btn-primary:hover {
+            background-color: #72c1d5; }
+        .header .hero-content-container .hero-content .btn-container .btn-secondary {
+          background-color: #845eb0; }
+          .header .hero-content-container .hero-content .btn-container .btn-secondary:hover {
+            background-color: #b18ddd; }
+
+@media only screen and (min-width: 768px) {
+  .header .logo {
+    margin-bottom: 6.4rem; }
+  .header .hero-container .hero-content-container .hero-content {
+    max-width: none; }
+    .header .hero-container .hero-content-container .hero-content h1 {
+      width: 35rem;
+      font-size: 5rem; }
+    .header .hero-container .hero-content-container .hero-content p {
+      width: 45.7rem; }
+    .header .hero-container .hero-content-container .hero-content .btn-container {
+      flex-direction: row; } }
+
+@media only screen and (min-width: 1200px) {
+  .header .logo {
+    margin-top: 8rem;
+    margin-bottom: 6.1rem; }
+  .header .hero-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    max-width: 160rem;
+    margin: 0 auto; }
+    .header .hero-container .image-hero {
+      display: none; }
+    .header .hero-container .image-hero-left,
+    .header .hero-container .image-hero-right {
+      display: block;
+      position: absolute; }
+    .header .hero-container .image-hero-left {
+      top: 0;
+      left: -3.5rem; }
+    .header .hero-container .image-hero-right {
+      right: -2.5rem;
+      bottom: 0; }
+    .header .hero-container .hero-content-container {
+      flex-grow: 1; }
+      .header .hero-container .hero-content-container .hero-content {
+        max-width: none;
+        width: 90%; }
+        .header .hero-container .hero-content-container .hero-content h1 {
+          font-size: 6.4rem;
+          width: 44.5rem;
+          margin-top: 5rem;
+          margin-bottom: 3.4rem; }
+        .header .hero-container .hero-content-container .hero-content p {
+          font-size: 1.8rem;
+          width: 50rem;
+          margin-bottom: 3.2rem; } }
+
+@media only screen and (min-width: 1400px) {
+  .hero-content p {
+    width: 54rem !important; } }
