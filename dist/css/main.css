@@ -13,8 +13,7 @@ body {
   font-family: "Red Hat Display", sans-serif;
   color: #86869c;
   font-size: 1.6rem;
-  font-weight: 500;
-  overflow-x: hidden; }
+  font-weight: 500; }
 
 .btn {
   font-family: inherit;
@@ -47,7 +46,8 @@ body {
 
 .header {
   text-align: center;
-  margin-bottom: 6.4rem; }
+  margin-bottom: 6.4rem;
+  overflow: hidden; }
   .header .logo {
     margin-top: 4.8rem;
     margin-bottom: 5.4rem; }
