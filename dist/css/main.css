@@ -13,9 +13,10 @@ body {
   font-family: "Red Hat Display", sans-serif;
   color: #86869c;
   font-size: 1.6rem;
-  font-weight: 500; }
+  font-weight: 500;
+  overflow-x: hidden; }
 
-.header .hero-content-container .hero-content .btn-container .btn {
+.btn {
   font-family: inherit;
   padding: 1.6rem 4rem;
   border: none;
@@ -26,9 +27,27 @@ body {
   color: #fafafa;
   font-weight: 700;
   transition: background-color 300ms; }
+  .btn span {
+    display: inline-block;
+    margin-left: 0.4rem; }
+
+.btn-primary {
+  background-color: #4d96a8; }
+  .btn-primary span {
+    color: #90e4f9; }
+  .btn-primary:hover {
+    background-color: #72c1d5; }
+
+.btn-secondary {
+  background-color: #845eb0; }
+  .btn-secondary span {
+    color: #d9b8ff; }
+  .btn-secondary:hover {
+    background-color: #b18ddd; }
 
 .header {
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 6.4rem; }
   .header .logo {
     margin-top: 4.8rem;
     margin-bottom: 5.4rem; }
@@ -59,18 +78,89 @@ body {
         flex-direction: column;
         align-items: center;
         gap: 1.6rem; }
-        .header .hero-content-container .hero-content .btn-container .btn-primary {
-          background-color: #4d96a8; }
-          .header .hero-content-container .hero-content .btn-container .btn-primary span {
-            display: inline-block;
-            margin-left: 0.4rem;
-            color: #90e4f9; }
-          .header .hero-content-container .hero-content .btn-container .btn-primary:hover {
-            background-color: #72c1d5; }
-        .header .hero-content-container .hero-content .btn-container .btn-secondary {
-          background-color: #845eb0; }
-          .header .hero-content-container .hero-content .btn-container .btn-secondary:hover {
-            background-color: #b18ddd; }
+
+.showcase-container::before,
+.experience::before {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 0.5px;
+  height: 8.4rem;
+  background-color: #d9d9d9; }
+
+section.showcase-container, section.experience {
+  text-align: center;
+  margin-bottom: 6.4rem; }
+  section.showcase-container .section-one, section.showcase-container .section-two, section.experience .section-one, section.experience .section-two {
+    display: inline-block;
+    padding: 1.5rem 1.9rem;
+    border-radius: 50%;
+    border: 0.5px solid #d9d9d9;
+    margin-bottom: 6.4rem;
+    background-color: #fafafa;
+    color: #86869c;
+    font-weight: 700; }
+  section.showcase-container h3, section.experience h3 {
+    font-size: 3rem;
+    max-width: 40rem;
+    margin: 0 auto;
+    margin-bottom: 3.2rem;
+    color: #28283e; }
+
+section.showcase-container .showcase-image-container {
+  max-width: 60rem;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 2.4rem;
+  gap: 2.4rem;
+  margin: 0 auto;
+  margin-bottom: 6.4rem; }
+  section.showcase-container .showcase-image-container img {
+    width: 45%;
+    border-radius: 2rem; }
+
+section.showcase-container .showcase-content {
+  margin: 0 2.4rem; }
+  section.showcase-container .showcase-content h2 {
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    font-weight: 700;
+    letter-spacing: 5px;
+    color: #4d96a8;
+    margin-bottom: 2.4rem; }
+
+section.experience {
+  margin-bottom: 0; }
+  section.experience::before {
+    transform: translateY(-30%); }
+  section.experience .experience-content {
+    position: relative;
+    color: #fafafa;
+    z-index: 1;
+    background-image: url("../assets/desktop/image-footer.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; }
+    section.experience .experience-content span.section-two {
+      transform: translateY(-50%); }
+    section.experience .experience-content h3 {
+      color: #fafafa;
+      padding: 0 2.4rem; }
+    section.experience .experience-content p {
+      margin: 0 2.4rem;
+      margin-bottom: 3.2rem; }
+    section.experience .experience-content button {
+      margin-bottom: 8rem; }
+    section.experience .experience-content::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+      background-color: rgba(77, 150, 168, 0.8); }
 
 @media only screen and (min-width: 768px) {
   .header .logo {
