@@ -57,7 +57,7 @@ Henceforth, I will be using SASS to complete most of the front-end mentor challe
 ## Author
 
 - Website - [PRINCEKK122](https://github.com/PRINCEKK122)
-- Frontend Mentor - [@PRINCEKK122](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@PRINCEKK122](https://www.frontendmentor.io/profile/PRINCEKK122)
 
 ## Acknowledgments
 @xtirian challenged me to complete this project, and I am looking forward to complete more chanllenges with him.
