@@ -117,10 +117,12 @@ section.showcase-container .showcase-image-container {
   margin-bottom: 6.4rem; }
   section.showcase-container .showcase-image-container img {
     width: 45%;
-    border-radius: 2rem; }
+    border-radius: 2rem;
+    margin: 0 auto; }
 
 section.showcase-container .showcase-content {
-  margin: 0 2.4rem; }
+  margin: 0 2.4rem;
+  margin-bottom: 10rem; }
   section.showcase-container .showcase-content h2 {
     text-transform: uppercase;
     font-size: 1.7rem;
@@ -173,7 +175,21 @@ section.experience {
     .header .hero-container .hero-content-container .hero-content p {
       width: 45.7rem; }
     .header .hero-container .hero-content-container .hero-content .btn-container {
-      flex-direction: row; } }
+      flex-direction: row; }
+  section.showcase-container .showcase-image-container {
+    flex-wrap: wrap;
+    max-width: 110rem;
+    gap: 0.5rem; }
+    section.showcase-container .showcase-image-container img {
+      width: 24%; }
+  section.showcase-container .showcase-content {
+    padding: 0 2.4rem;
+    max-width: 58rem;
+    margin: 0 auto; }
+  section.experience .experience-content p {
+    width: 57.3rem;
+    margin: 0 auto;
+    margin-bottom: 4rem; } }
 
 @media only screen and (min-width: 1200px) {
   .header .logo {
@@ -210,7 +226,29 @@ section.experience {
         .header .hero-container .hero-content-container .hero-content p {
           font-size: 1.8rem;
           width: 50rem;
-          margin-bottom: 3.2rem; } }
+          margin-bottom: 3.2rem; }
+  section.showcase-container .showcase-content {
+    margin-bottom: 10rem; }
+    section.showcase-container .showcase-content p {
+      font-size: 1.8rem; }
+  section.experience .experience-inner-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 110rem;
+    margin: 0 auto;
+    padding-bottom: 10rem;
+    padding-left: 0; }
+    section.experience .experience-inner-container h3 {
+      text-align: left;
+      width: 25rem;
+      margin: 0;
+      padding: 0; }
+    section.experience .experience-inner-container p {
+      width: 35rem;
+      margin: 0; }
+    section.experience .experience-inner-container button {
+      margin-bottom: 0; } }
 
 @media only screen and (min-width: 1400px) {
   .hero-content p {
